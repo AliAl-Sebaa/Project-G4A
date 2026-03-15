@@ -1,15 +1,16 @@
 <?php
 $host = "localhost";
-$db = "key_it_maintenance";
-$user = "root";
-$pass = "";
+$db_name = "key_it_maintenance";
+$username = "root";
+$password = "";
 
-try{
-$pdo = new PDO("mysql:host=$host;dbname=$db",$user,$pass);
-$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-}catch(PDOException $e){
-echo $e->getMessage();
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$db_name", $username, $password);
+} catch(PDOException $e) {
+    $pdo = null;
 }
 
-session_start();
+if(session_status() === PHP_SESSION_NONE){
+    session_start();
+}
 ?>
