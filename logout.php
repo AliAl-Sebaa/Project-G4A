@@ -1,7 +1,15 @@
 <?php
 
-session_start();
+require '../config/database.php';
 
-session_destroy();
+if(!isset($_SESSION['user_id'])){
 
-header("Location:index.php");
+header("Location:../login.php");
+
+}
+
+?>
+
+<h1>Employee Dashboard</h1>
+
+<a href="../logout.php">Logout</a>
