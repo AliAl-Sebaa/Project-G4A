@@ -3,9 +3,7 @@
 require '../config/database.php';
 
 if($_SESSION['role']!="Technician"){
-
 header("Location:../login.php");
-
 }
 
 ?>
