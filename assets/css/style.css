@@ -1,83 +1,17 @@
-:root {
-    --primary-color: #4A6FA5;
-    --secondary-color: #E3ECF7;
-    --accent-color: #3AAFA9;
-    --bg-color: #F5EFE6;
-    --text-color: #333333;
-    --sidebar-width: 260px;
+body{
+background:#F5EFE6;
+font-family:Arial;
 }
 
-body {
-    background-color: var(--bg-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text-color);
+.hero{
+text-align:center;
+margin-top:150px;
 }
 
-/* Sidebar Styling */
-.sidebar {
-    width: var(--sidebar-width);
-    height: 100vh;
-    position: fixed;
-    background: white;
-    box-shadow: 4px 0 10px rgba(0,0,0,0.05);
-    z-index: 1000;
+.hero h1{
+color:#4A6FA5;
 }
 
-.sidebar-header {
-    padding: 20px;
-    background: var(--primary-color);
-    color: white;
-    text-align: center;
-}
-
-.nav-link {
-    color: #555;
-    padding: 12px 20px;
-    transition: 0.3s;
-    border-radius: 8px;
-    margin: 5px 15px;
-}
-
-.nav-link:hover, .nav-link.active {
-    background: var(--secondary-color);
-    color: var(--primary-color);
-}
-
-/* Main Content Area */
-.main-content {
-    margin-left: var(--sidebar-width);
-    padding: 30px;
-}
-
-/* Dashboard Cards */
-.card {
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.stat-icon {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-}
-
-/* Status Badges */
-.badge-pending { background-color: #ffc107; }
-.badge-assigned { background-color: #0d6efd; }
-.badge-progress { background-color: #17a2b8; }
-.badge-completed { background-color: #198754; }
-.badge-cancelled { background-color: #dc3545; }
-
-/* Buttons */
-.btn-primary { background-color: var(--primary-color); border: none; }
-.btn-accent { background-color: var(--accent-color); color: white; border: none; }
-
-@media (max-width: 768px) {
-    .sidebar { margin-left: -260px; }
-    .main-content { margin-left: 0; }
+.btn{
+margin:10px;
 }
